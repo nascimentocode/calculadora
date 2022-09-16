@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+}
+
+.calculator{
+    background-color: rgb(146, 146, 146);
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.painel{
+    position: relative;
+    background-color: white;
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#current{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+}
+
+#previous{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 14px 35px 0;
+}
+
+.buttons{
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 20px; 
+}
+
+.buttons button{
+    font-size: 20px;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 2px;
+    margin: 2.5px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+#number, 
+#sign,
+#float{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#number:hover,
+#sign:hover,
+#float:hover{
+    background-color:  rgb(37, 37, 37);
+}
+
+#clear{
+    background-color: rgb(226, 97, 97);
+    color: white;
+}
+#clear:hover{
+    background-color: rgb(110, 42, 42);
+
+}
+
+#operator,
+#equal{
+    background-color: rgb(226, 192, 97);
+    color: white;
+}
+#operator:hover,
+#equal:hover{
+    background-color: rgb(133, 112, 56);
+}
+
+
+
